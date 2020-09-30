@@ -1,0 +1,8 @@
+<div id="lastVote">{{result}}</div>
+
+<app-voter
+[question]="question"
+[yesAnswer]="yesAnswer"
+[noAnswer]="noAnswer"
+(output)="onVoted($event)"
+></app-voter>
